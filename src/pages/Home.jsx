@@ -1,8 +1,17 @@
+import Story from "./Story";
+import users from "../Users";
+
 function Home(){
     return(
         <>
-        <h1 className="text-4xl text-center mt-24 ">This is home page</h1>
+        <div className="mt-6 mx-auto w-[60%]">
+      <h1 className="text-lg font-bold mb-3 text-pink-600">Stories</h1>
+      <Story users={users} />
+    </div>
+        
+      
+       
         </>
     )
 }
-export default Home;
+export default Home; 

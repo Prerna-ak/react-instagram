@@ -13,11 +13,13 @@ function App(){
     <Navbar/>
 
     <Routes>
-      <Route path="/" element={<Home/>} />
+      <Route path="/" element={<Requests/>} />
       <Route path="/about" element={<About/>} />
+      <Route path="/home" element={<Home/>} />
       <Route path="/requests" element={<Requests/>} />
       < Route path="/:username" element={<UserDetails/>}/>
       <Route path="/post/:id" element={<Post />}/>
+
       <Route  path="*" element={<Error/>}/>
     </Routes>
     </>
